@@ -46,10 +46,13 @@ section .section-container{
 .txt h3{
     letter-spacing: 5px;
     font-size: 1.2em;
+
+    margin-top: 32px;
 }
 
 .txt input{
     border: none;
     border-bottom: 7px double #1c3e37;
     background-color: transparent;
+    margin-top: 32px;
 }

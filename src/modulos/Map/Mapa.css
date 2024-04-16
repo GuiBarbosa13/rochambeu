@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.mapa-texto h4{
+    font-family: "Calligraffitti", cursive;
+    font-weight: 400;
+    font-size: 64px;
+
+    text-align: center;
+
+    color: #1c3f39;
+}
+
+.mapa-texto hr{
+    width: 65px;
+}
