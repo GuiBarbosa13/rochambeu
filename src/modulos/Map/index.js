@@ -3,17 +3,16 @@ import './Mapa.css';
 
 const Mapa = ({lista}) =>{
     return(
-        <div>
+        <div className='mapa'>
             <div className='mapa-texto'>
 
                 <h4>Club Map</h4>
-                <hr/>
                 <ul>
                     {lista.map(lugar => <li key = {lugar}>{lugar}</li>)}
                 </ul>
-
+                
             </div>
-            
+            <img src='/mapa.webp' alt='imagem mapa do clube'/>
         </div>
     )
 }
