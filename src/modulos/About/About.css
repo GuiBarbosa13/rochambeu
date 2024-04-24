@@ -56,3 +56,28 @@ section .section-container{
     background-color: transparent;
     margin-top: 32px;
 }
+
+@media (max-width: 480px){
+    section{
+        padding: 32px;
+        height: fit-content;
+    }
+
+    .section-container{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .section-container .img{
+        height: 20em;
+    }
+
+    .section-container .img img{
+        margin-top: -80px;
+    }
+
+    .section-container .txt{
+        box-sizing: border-box;
+        padding: 0 16px 64px 16px;
+    }
+}

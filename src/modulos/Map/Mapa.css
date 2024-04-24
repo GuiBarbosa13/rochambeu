@@ -4,11 +4,21 @@
 
 .mapa{
     display: flex;
+    flex-direction: column;
 
     padding: 128px;
 
     background-color: #e8e5de;
 }
+
+.mapa-container{
+    display: flex;
+
+    padding: 32px;
+    align-items: center;
+    gap: 4em;
+}
+
 
 .mapa-texto{
     border: double 7px #1c3e37;
@@ -23,12 +33,14 @@
     text-align: center;
 }
 
-.mapa-texto h4{
+.titulo{
     font-family: "Calligraffitti", cursive;
     font-weight: 400;
     font-size: 64px;
 
     position: relative;
+
+    z-index: 0;
 
     top: -30px;
 
@@ -45,4 +57,31 @@
 
 .mapa img{
     width: 60%;
+}
+
+@media (max-width: 480px){
+    .mapa{
+        flex-direction: column;
+        padding: 8px;
+    }
+
+    .mapa-texto{
+        width: 100%;
+    }
+
+    .titulo{
+        top: 32px;
+    }
+
+    .mapa-container{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 32px;
+        align-items: center;
+        gap: 4em;
+    }
+
+    .mapa-container img{
+        width: 100%;
+    }
 }
